@@ -1,9 +1,14 @@
 import React from "react";
 import "./styles.css";
-import CardVideo from "./componentes/CardVideo";
+import CardVideo from "./Componentes/CardVideo";
 
 export default function App() {
-  
+  const newObj = {
+    titulo: 'Guardioes da Galaxia',
+    imagem: 'https://img.olhardigital.com.br/wp-content/uploads/2023/05/guardioes-da-galaxia-3.jpg',
+    usuario: 'Augusto',
+  }
+
   return (
     <div>
       <div className="tela-inteira">
@@ -25,14 +30,14 @@ export default function App() {
           </nav>
 
           <section className="painel-de-videos">
-           <CardVideo/>
-           <CardVideo/>
-           <CardVideo/>
-           <CardVideo/>
-           <CardVideo/>
-           <CardVideo/>
-           <CardVideo/>
-           <CardVideo/>
+           <CardVideo newObj = {newObj}/>
+           <CardVideo newObj = {newObj}/>
+           <CardVideo newObj = {newObj}/>
+           <CardVideo newObj = {newObj}/>
+           <CardVideo newObj = {newObj}/>
+           <CardVideo newObj = {newObj}/>
+           <CardVideo newObj = {newObj}/>
+           <CardVideo newObj = {newObj}/>
           </section>
         </main>
 
